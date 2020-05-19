@@ -1,0 +1,7 @@
+include: package:effective_dart/analysis_options.yaml
+
+
+linter:
+  rules:
+    avoid_positional_boolean_parameters: false
+    public_member_api_docs: false

@@ -25,13 +25,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Clipper Demo"),
+      ),
       body: Center(
         child: ListView.builder(
           itemCount: buttons.length,
           itemBuilder: (context, index) {
             return Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 25,vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
               child: FlatButton(
                 color: Colors.blue,
                 onPressed: () {

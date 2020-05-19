@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clipper/demo/clippers/add_oval_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/add_path_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/add_polygon_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/arc_to_point_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/line_to_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/move_to_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/quadratic_bezier_to_clipper.dart';
-import 'package:flutter_clipper/demo/clippers/relative_line_to_clipper.dart';
 
+import 'clippers/add_oval_clipper.dart';
+import 'clippers/add_path_clipper.dart';
+import 'clippers/add_polygon_clipper.dart';
 import 'clippers/add_rect_clipper.dart';
 import 'clippers/arc_to_clipper.dart';
+import 'clippers/arc_to_point_clipper.dart';
 import 'clippers/cubic_to_clipper.dart';
+import 'clippers/line_to_clipper.dart';
+import 'clippers/move_to_clipper.dart';
+import 'clippers/quadratic_bezier_to_clipper.dart';
+import 'clippers/relative_line_to_clipper.dart';
 import 'home.dart';
 
 class NavigationUtils {
@@ -54,7 +54,9 @@ class NavigationUtils {
       case routeRelativeLineTo:
         return MaterialPageRoute(builder: (_) => RelativeLineToClipper());
       default:
-        {}
+        {
+          return MaterialPageRoute(builder: (_) => HomeScreen());
+        }
     }
   }
 
