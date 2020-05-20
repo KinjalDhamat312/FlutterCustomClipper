@@ -1,2 +1,1 @@
-# Flutter Custom Clipper
 
